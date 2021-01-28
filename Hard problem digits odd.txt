@@ -1,0 +1,16 @@
+def hard(n):
+    digits = [int(x) for x in str(n)]
+    val = str(n)
+    val1 = list(val)
+    s = []
+    i = 0
+    for i in val1:
+        if i%2 != 0:
+            s = i
+        i = i + 1 
+    des = s.count()
+    print("There are " + des + " odd digits in this number ")
+    
+hard(345)
+            
+            
